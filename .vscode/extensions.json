@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "atlassian.atlascode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "GraphQL.vscode-graphql",
+    "GraphQL.vscode-graphql-syntax",
+    "mikestead.dotenv",
+    "Vue.volar",
+    "shardulm94.trailing-spaces",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "syler.sass-indented"
+  ]
+}
