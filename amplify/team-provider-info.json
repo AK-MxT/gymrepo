@@ -1,0 +1,15 @@
+{
+  "prd": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gymrepo-prd-134450-authRole",
+      "UnauthRoleArn": "arn:aws:iam::705888030380:role/amplify-gymrepo-prd-134450-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::705888030380:role/amplify-gymrepo-prd-134450-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-gymrepo-prd-134450-deployment",
+      "UnauthRoleName": "amplify-gymrepo-prd-134450-unauthRole",
+      "StackName": "amplify-gymrepo-prd-134450",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:705888030380:stack/amplify-gymrepo-prd-134450/b2448160-9196-11ee-8bdd-0602e7724565",
+      "AmplifyAppId": "d2qrdgnblott7q"
+    }
+  }
+}
