@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  middleware: ['authenticated']
+})
+
 const mock = [
   {
     title: '胸の日',

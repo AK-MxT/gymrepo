@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  middleware: ['authenticated']
+})
+
 useHead({
   title: 'メニュー登録'
 })

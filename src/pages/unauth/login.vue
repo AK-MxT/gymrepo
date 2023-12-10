@@ -27,7 +27,9 @@ const login = async () => {
       password: loginField.password
     })
 
-    router.push('/admin/record')
+    console.log(userInfo)
+
+    router.push('/auth/record')
   } catch (err) {
     console.error('error signing in.', err)
   } finally {
