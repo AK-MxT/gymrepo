@@ -1,0 +1,19 @@
+"""
+メニューの詳細内容を保存するオブジェクト
+"""
+type MenuDetail {
+  "メニュー名"
+  menuName: String!
+
+  "重さ"
+  weight: Int!
+
+  "回数"
+  count: Int!
+
+  "セット数"
+  set: Int!
+
+  "メモ"
+  note: String
+}

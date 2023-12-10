@@ -1,0 +1,16 @@
+projects:
+  gymrepo:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: types/API.ts
+        docsFilePath: src/graphql
+        maxDepth: 3
+extensions:
+  amplify:
+    version: 3

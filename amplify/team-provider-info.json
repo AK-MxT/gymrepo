@@ -10,6 +10,14 @@
       "StackName": "amplify-gymrepo-prd-134450",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:705888030380:stack/amplify-gymrepo-prd-134450/b2448160-9196-11ee-8bdd-0602e7724565",
       "AmplifyAppId": "d2qrdgnblott7q"
+    },
+    "categories": {
+      "auth": {
+        "gymrepoc8136da6c8136da6": {}
+      },
+      "api": {
+        "gymrepo": {}
+      }
     }
   }
 }

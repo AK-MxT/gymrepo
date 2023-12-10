@@ -1,0 +1,103 @@
+"""
+筋トレメニュー
+
+筋トレメニュー情報を管理するテーブル。
+
+"""
+type Menu
+  @model(
+    queries: {
+      get: null
+      list: null
+    }
+    mutations: {
+      create: "createMenu"
+      delete: null
+      update: "updateMenu"
+    }
+    subscriptions: null
+  )
+  @auth(
+    rules: [
+      { # 本人
+        allow: owner
+        operations: [create, read, update]
+        ownerField: "id"
+        provider: userPools
+      }
+    ]
+  )
+{
+  """
+  主キー
+
+  ```graphql
+  id: ID!
+    @primaryKey
+  ```
+  """
+  id: ID! @primaryKey
+
+  """
+  ユーザーID
+  """
+  userId: ID!
+    @index(
+      name: "byUser",
+      sortKeyFields: ["createdAt"],
+      queryField: "listMenusByUser"
+    )
+
+  """
+  メニュー名
+  """
+  title: String!
+
+  """
+  メニュー内容
+  """
+  menulist: [MenuDetail!]
+
+  """
+  削除状態
+
+  * 通常状態は `TrueFalse.FALSE`
+  """
+  isDeleted: TrueFalse!
+    @default(
+      value: "FALSE"
+    )
+
+  """
+  削除日時
+  （UTC）
+  """
+  deletedAt: AWSDateTime
+
+  """
+  削除者
+  """
+  deletedBy: ID
+
+  """
+  作成日時。自動で登録される
+  （UTC）
+  """
+  createdAt: AWSDateTime!
+
+  """
+  作成者
+  """
+  createdBy: ID!
+
+  """
+  更新日時。自動で更新される
+  （UTC）
+  """
+  updatedAt: AWSDateTime
+
+  """
+  更新者
+  """
+  updatedBy: ID
+}

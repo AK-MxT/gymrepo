@@ -1,0 +1,12 @@
+"""
+インデックス対応論理フラグ
+
+[`Boolean`](Boolean) だと、 `@index` が張れないため
+"""
+enum TrueFalse {
+  "真値"
+  TRUE
+
+  "偽値"
+  FALSE
+}
